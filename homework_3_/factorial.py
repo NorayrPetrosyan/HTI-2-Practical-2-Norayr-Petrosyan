@@ -7,6 +7,3 @@ def factorial(number):
     return factorial
 
 print(factorial(number))
-
-
-
