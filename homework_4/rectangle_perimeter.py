@@ -5,7 +5,7 @@ def segment_length(x1, y1, x2, y2):
     return root_of_d
 
 def rectangle_perimeter(x1, y1, x2, y2 ,x3 ,y3 ,x4 ,y4):
-    perimeter = 2 * (segment_length(x1, y1, x2, y2) + segment_length(x3, y3, x4, y4))
+    perimeter = 2 * (segment_length(x1, y1, x2, y2) + segment_length(x2, y2, x3, y3))
 
     return perimeter
 
