@@ -6,7 +6,7 @@ def get_a_random_word():
     current_dir = os.path.dirname(__file__)
     file_path = os.path.join(current_dir, file_name)
 
-    with open('fruits.txt') as fruit:
+    with open(file_path) as fruit:
         fruits = [row for row in fruit.readlines()]
         return random.choice(fruits)
 
