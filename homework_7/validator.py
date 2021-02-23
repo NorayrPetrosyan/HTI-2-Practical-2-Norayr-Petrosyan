@@ -35,7 +35,8 @@ if __name__ == '__main__':
 
     else:
         if len(sys.argv) == 2:
-            if sys.argv[1] == "phone_number" or sys.argv[1] == "email":
+            command = sys.argv[1]
+            if command == "phone_number" or command == "email":
                 print("No value passed.")
             else:
                 print("No such command.")
