@@ -3,13 +3,13 @@ import re
 
 def validate_phone_number(number):
     pattern = '^0?(77|98|55|99|91)[\ -]?(\d{2}-\d{2}-\d{2}|\d{3}[\ -]?\d{3}|\d{2}[\ ]\d{2}[\ ]\d{2})$'
-    if re.match(pattern,number):
+    if re.fullmatch(pattern,number):
         return True
     return False
 
 def validate_email(email):
     pattern1 = '^[a-zA-Z0-9]+[_a-zA-Z0-9-.+]@[a-zA-Z0-9]+[a-zA-Z_.].+[A-Za-z]$'
-    if re.match(pattern1, email):
+    if re.fullmatch(pattern1, email):
         return True
     return False
 
