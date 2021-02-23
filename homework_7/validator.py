@@ -25,7 +25,7 @@ if __name__ == '__main__':
                 print("No")
 
         elif command == "email":
-            if validate_phone_number(value):
+            if validate_email(value):
                 print("Yes")
             else:
                 print("No")
